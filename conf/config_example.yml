@@ -1,0 +1,10 @@
+# type can be docker or file
+type: file
+# can be empty for apply for all repositories
+repos:
+# regex based values like "*develop*" for get regex *develop*
+cleanupPatterns:
+  - "*develop.*"
+# regex based values like "*develop.1*" for get regex *develop.1*
+excludePatterns:
+  - "*pytests/develop*"
